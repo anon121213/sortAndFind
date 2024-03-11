@@ -1,6 +1,5 @@
 const list = [ 1, 5, 3, 7, 9, 4, 7, 23, 56, 3, 44, 655, 46, 34, 58, 78 ]
 // const list = []
-let sortList
 let count = 0
 let sortIt = 0
 const randInd = 20
@@ -67,8 +66,7 @@ function bilinarSearch(array, item, iterations){
     return 'такого элемента нет'
 }
 
-sortList = sort(list)
 // RandomList(list)
 console.log(sort(list, sortIt))
 console.log(`итерации сортировки: ${sortIt}`)
-console.log(bilinarSearch(sortList, 7, count))
+console.log(bilinarSearch(sort(list), 7, count))
